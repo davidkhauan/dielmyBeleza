@@ -5,3 +5,195 @@
     list-style: none;
     text-decoration: none;
 }
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    margin-bottom: 30px;
+}
+header nav:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+header nav:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+main {
+    background-color: darkkhaki;
+    border: 2px solid black;
+    margin-bottom: 30px;
+}
+
+.inicio .inicio-fundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.inicio-fundo img {
+    width: 400px;
+    height: 500px;
+}
+
+.barra-social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+.barra-social .barra1 {
+    width: 1500px;
+    height: 2px;
+    background-color: black;
+}
+.barra-social .rede-sociais {
+    display: flex;
+    gap: 10px;
+}
+.barra-social .barra2 {
+    width: 200px;
+    height: 2px;
+    background-color: black;
+}
+
+main .sobre {
+    gap: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+.imagens img {
+    width: 500px;
+    height: 600px;
+}
+.sobre .sobre-texto {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: 300;
+}
+.sobre-texto button {
+    width: 100px;
+}
+
+main .servicos {
+    margin-bottom: 30px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.servicos-conteudo {
+    display: flex;
+}
+.servico-compra #barra {
+    width: 360px;
+    background-color: black;
+    height: 5px;
+}
+.servicos-img img {
+    width: 500px;
+    height: 600px;
+}
+.servicos-cards .card .barra {
+    width: 360px;
+    background-color: black;
+    height: 5px;
+}
+
+main .produtos {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.produtos-texto {
+    text-align: center;
+}
+.produtos .produtos-card {
+    display: flex;
+    flex-direction: row;
+}
+.produtos-card .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.produtos-card .card img {
+    width: 300px;
+    height: 300px;
+}
+.produtos-card .card p {
+    font-size: 20px;
+}
+
+main .feedback {
+    margin-bottom: 30px;
+}
+.feedback .feedback-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.feedback-conteudo .conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.feedback-imagem img {
+    width: 500px;
+    height: 600px;
+}
+
+main .instagram {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.instagram .instagram-carrosel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.instagram-carrossel img {
+    width: 300px;
+    height: 300px;
+}
+
+footer {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
