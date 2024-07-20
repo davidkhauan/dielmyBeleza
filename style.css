@@ -45,25 +45,19 @@ header {
     width: 100%;
     height: 70px;
     top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
+
 nav ul {
     list-style: none;
-}
-nav ul:first-child {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 10px;
+    gap: 20px;
 }
-nav ul:last-child {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 10px;
-}
+
 li a {
-    font-size: 18px;
+    font-size: 20px;
     font-family: var(--font-EduAustralia);
     font-weight: 800;
     color: black;
@@ -122,7 +116,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 80px;
+    margin-bottom: 30px;
 }
 .inicio-fundo img {
     width: 400px;
@@ -137,7 +132,7 @@ main {
     color: black;
 }
 .inicio-texto h3 {
-    color: black;
+    color: #5b1b0c;
 }
 
 .barra-social {
@@ -183,26 +178,55 @@ main {
 }
 
 main .sobre {
-    gap: 20px;
+    gap: 300px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
+    padding: 0 100px;
 }
 .imagens img {
     width: 500px;
     height: 600px;
+    border-radius: 5px;
+    border: 2px solid var(--pink-vinho);
+    box-shadow: rgba(218, 32, 94, 0.448) 0px 10px 36px 0px, rgba(199, 67, 67, 0.505) 0px 0px 0px 1px;
 }
 .sobre .sobre-texto {
     display: flex;
     flex-direction: column;
     font-size: 30px;
     font-weight: 300;
+    gap: 20px;
+    align-items: start;
+    justify-content: center;
+}
+.sobre-texto h4 {
+    color: #7d1b27;
+}
+.sobre-texto p {
+    color: #5b1b0c;
 }
 .sobre-texto button {
-    width: 100px;
+    color: black;
+    font-weight: bold;
+    height: 60px;
+    width: 250px;
+    margin-top: 50px;
+    font-size: 24px;
+    background-color: var(--pink-color);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.sobre-texto button:hover {
+    box-shadow: rgba(218, 32, 94, 0.448) 0px 5px 15px;
+    transform: scale(1.05);
+    color: whitesmoke;
+    background-color: black;
+    border: 1px solid var(--pink-vinho);
 }
 
 main .servicos {
