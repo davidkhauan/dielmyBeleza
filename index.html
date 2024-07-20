@@ -4,32 +4,38 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand&display=swap" rel="stylesheet">
         <title>Dielmy - Corpo & Beleza</title>
     </head>
     
     <body>
         <header>
             <nav>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                </ul>
             </nav>
 
-            <div class="logo">
-                <h1>LOGOMARCA</h1>
+            <div class="logo-box">
+                <img src="./src/img/woman-hair.png" alt="" id="logo">
+                <h2>Dielmy Beleza</h2>
             </div>
 
-            <nav>
-                <li>TRADUTOR</li>
-                <li><i>SWITCHCOLOR</i></li>
-            </nav>
+            <div id="switch">
+                <i class="bi bi-toggle2-off icon-black" id="btn-switch"></i>
+            </div>
         </header>
 
         <main>
             <div class="inicio" id="inicio">
                 <div class="inicio-fundo">
                     <div class="inicio-texto">
-                        <h1>Deixe seu cabelo perfeito para a sua beleza</h1>
+                        <h1>Deixe seu cabelo perfeito <br> para a sua beleza</h1>
                         <h3>
                             Unha e cabelo juntos com um salão bonito,
                             para lhe entregar serviços excelentes
@@ -41,9 +47,15 @@
                 <div class="barra-social">
                     <div class="barra1"></div>
                     <div class="rede-sociais">
-                        <i><a href="#">Insta</a></i>
-                        <i><a href="#">Facebook</a></i>
-                        <i><a href="#">Twitter</a></i>
+                            <a href="https://www.instagram.com/dielmycabelo_e_corpo/" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://w.app/dielmyBeleza" target="_blank">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@dielmycabeloecorpo6243" target="_blank">
+                                <i class="bi bi-youtube"></i>
+                            </a>
                     </div>
                     <div class="barra2"></div>
                 </div>
@@ -69,7 +81,7 @@
                 </div>
             </section>
 
-            <section class="servicos">
+            <section class="servicos" id="servicos">
                 <div class="servicos-texto">
                     <h4>Serviços</h4>
                     <h1>Você irá ter uma experiência incrível para lhe deixar mais bonita</h1>
@@ -213,7 +225,7 @@
             </section>
 
             <section class="instagram">
-                <h1>Instagram: <a href="#">@dielmycabelo_e_corpo</a></h1>
+                <h1>Instagram: <a href="https://www.instagram.com/dielmycabelo_e_corpo/" target="_blank">@dielmycabelo_e_corpo</a></h1>
                 <div class="instagram-carrossel">
                     <img src="/src/img/woman.jpg" alt="">
                     <img src="/src/img/produto.jpg" alt="">
@@ -223,7 +235,7 @@
             </section>
         </main>
 
-        <footer>
+        <footer id="contato">
             <div class="diely-salao">
                 <h1><i>ICONE</i> DielmyCabelo&Corpo</h1>
                 <p>Querendo sempre deixar você mais linda do que é</p>
