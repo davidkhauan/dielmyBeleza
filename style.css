@@ -222,7 +222,7 @@ main .sobre {
     font-size: 24px;
     background-color: var(--pink-color);
     border-radius: 30px;
-    border: none;
+    border: 2px solid var(--pink-vinho);
     cursor: pointer;
     transition: 0.3s all ease;
 }
@@ -285,7 +285,7 @@ main .servicos {
     font-size: 18px;
     background-color: var(--pink-color);
     border-radius: 30px;
-    border: none;
+    border: 2px solid var(--pink-vinho);
     cursor: pointer;
     transition: 0.3s all ease;
 }
@@ -342,6 +342,7 @@ main .servicos {
 
 /* Seção Produtos */
 main .produtos {
+    margin-top: 50px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -355,19 +356,58 @@ main .produtos {
 .produtos .produtos-card {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 50px;
 }
 .produtos-card .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    max-width: 350px;
+    word-wrap: break-word;
+    word-break: break-word;
 }
-.produtos-card .card img {
-    width: 300px;
-    height: 300px;
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
 }
-.produtos-card .card p {
-    font-size: 20px;
+.card h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+.card p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.card .preco {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+.card .comprar {
+    color: black;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: var(--pink-color);
+    border-radius: 30px;
+    border: 2px solid var(--pink-vinho);
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.card .comprar:hover {
+    box-shadow: rgba(218, 32, 94, 0.448) 0px 5px 15px;
+    transform: scale(1.05);
+    color: whitesmoke;
+    background-color: black;
+    border: 1px solid var(--pink-vinho);
 }
 
 /* Seção Feedback */
@@ -420,3 +460,8 @@ footer {
 }
 
 /* Media Queries */
+@media (max-width: 768px) {
+    .produtos-card {
+        flex-direction: column;
+    }
+}
