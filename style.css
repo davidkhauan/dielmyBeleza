@@ -110,11 +110,6 @@ li a:hover {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Principal */
-main {
-    margin-bottom: 30px;
-}
-
 /* Inicio */
 .inicio .inicio-fundo {
     display: flex;
@@ -464,21 +459,32 @@ main .feedback {
 
 /* Seção Instagram */
 main .instagram {
-    margin-bottom: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 30px;
 }
-.instagram .instagram-carrosel {
+.instagram h1 a {
+    color: azure;
+}
+.instagram .instagram-carrossel {
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    gap: 5px;
 }
 .instagram-carrossel img {
     width: 300px;
     height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
