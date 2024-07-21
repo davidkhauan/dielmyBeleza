@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+/* Geral */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +21,7 @@
 
 body {
     background: rgb(195, 149, 159);
-    background: linear-gradient(141deg, rgb(234, 210, 216) 41%, rgba(208,107,119,1) 72%, rgb(153, 59, 70) 100%);
+    background: linear-gradient(141deg, rgb(234, 210, 216) 41%, rgb(227, 120, 132) 72%, rgb(237, 136, 136) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
@@ -38,6 +39,7 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid black;
 }
 
+/* Cabeçalho */
 header {
     display: flex;
     align-items: center;
@@ -108,10 +110,12 @@ li a:hover {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
+/* Principal */
 main {
     margin-bottom: 30px;
 }
 
+/* Inicio */
 .inicio .inicio-fundo {
     display: flex;
     align-items: center;
@@ -177,9 +181,10 @@ main {
     background-color: black;
 }
 
+/* Seção Sobre */
 main .sobre {
     gap: 300px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -216,7 +221,7 @@ main .sobre {
     margin-top: 50px;
     font-size: 24px;
     background-color: var(--pink-color);
-    border-radius: 10px;
+    border-radius: 30px;
     border: none;
     cursor: pointer;
     transition: 0.3s all ease;
@@ -229,33 +234,113 @@ main .sobre {
     border: 1px solid var(--pink-vinho);
 }
 
+/* Seção Serviços */
 main .servicos {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
+}
+.servicos .servicos-texto {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.servicos-texto h1 {
+    font-size: 32px;
 }
 .servicos-conteudo {
+    display:flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 0 40px;
+}
+.servicos-conteudo .servico-compra {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    max-width: 300px;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.servico-compra h1 {
+    font-size: 28px;
+}
+.servico-compra p {
+    text-align: left;
+    font-size: 18px;
+}
+.servico-compra button {
+    color: black;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    margin-top: 50px;
+    font-size: 18px;
+    background-color: var(--pink-color);
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.servico-compra button:hover {
+    box-shadow: rgba(218, 32, 94, 0.448) 0px 5px 15px;
+    transform: scale(1.05);
+    color: whitesmoke;
+    background-color: black;
+    border: 1px solid var(--pink-vinho);
 }
 .servico-compra #barra {
-    width: 360px;
+    width: 260px;
     background-color: black;
-    height: 5px;
+    height: 3px;
+    margin-bottom: 40px;
 }
+.servicos-conteudo .servicos-img {
+    max-width: 400px;
+} 
 .servicos-img img {
-    width: 500px;
-    height: 600px;
+    width: 400px;
+    height: 500px;
 }
-.servicos-cards .card .barra {
-    width: 360px;
+.servicos-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.servicos-cards .card1,
+.servicos-cards .card2 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.cards .card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 300px;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.card p {
+    font-size: 14px;
+    text-align: left;
+    word-break: break-word;
+}
+.card .barra {
+    width: 160px;
     background-color: black;
-    height: 5px;
+    height: 3px;
+    margin-bottom: 5px;
 }
 
+/* Seção Produtos */
 main .produtos {
     margin-bottom: 30px;
     display: flex;
@@ -285,6 +370,7 @@ main .produtos {
     font-size: 20px;
 }
 
+/* Seção Feedback */
 main .feedback {
     margin-bottom: 30px;
 }
@@ -306,6 +392,7 @@ main .feedback {
     height: 600px;
 }
 
+/* Seção Instagram */
 main .instagram {
     margin-bottom: 30px;
     display: flex;
@@ -324,9 +411,12 @@ main .instagram {
     height: 300px;
 }
 
+/* Footer */
 footer {
     border: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+
+/* Media Queries */
