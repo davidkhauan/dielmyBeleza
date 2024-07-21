@@ -184,6 +184,7 @@ main {
 /* Seção Sobre */
 main .sobre {
     gap: 300px;
+    margin-top: 100px;
     margin-bottom: 50px;
     display: flex;
     flex-direction: row;
@@ -236,6 +237,7 @@ main .sobre {
 
 /* Seção Serviços */
 main .servicos {
+    margin-top: 100px;
     margin-bottom: 50px;
     padding: 0 20px;
     display: flex;
@@ -342,7 +344,7 @@ main .servicos {
 
 /* Seção Produtos */
 main .produtos {
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -413,19 +415,47 @@ main .produtos {
 /* Seção Feedback */
 main .feedback {
     margin-bottom: 30px;
+    margin-top: 100px;
 }
 .feedback .feedback-conteudo {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 .feedback-conteudo .conteudo {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 20px;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+.autor {
+    display: flex;
+}
+.autor-dados {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+.autor-icons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.feedback-texto {
+    font-size: 34px;
+    flex: 1;
+    max-width: 500px;
+}
+.feedback-imagem {
+    flex: 1;
 }
 .feedback-imagem img {
     width: 500px;
@@ -463,5 +493,13 @@ footer {
 @media (max-width: 768px) {
     .produtos-card {
         flex-direction: column;
+    }
+    
+    .feedback-conteudo .conteudo {
+        flex-direction: column;
+    }
+
+    .feedback-imagem, .texto-feedback {
+        max-width: 100%;
     }
 }
