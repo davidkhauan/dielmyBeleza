@@ -25,7 +25,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 body::-webkit-scrollbar {
     width: 10px;
@@ -489,10 +491,51 @@ main .instagram {
 
 /* Footer */
 footer {
-    border: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: var(--pink-color);
+    color: black;
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    bottom: 0;
+}
+footer h1, footer h3, footer a, footer p {
+    margin: 10px 0;
+}
+.diely-salao, .quick-links, .contatos-rede {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.diely-salao h1 i, .diely-salao h3 i {
+    margin-right: 8px;
+}
+.quick-links a {
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.contatos-rede a {
+    font-size: 36px;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.quick-links a:hover, .contatos-rede a:hover {
+    color: whitesmoke;
+    transform: scale(1.05);
+}
+.contatos h1 {
+    margin-bottom: 10px;
+}
+.contatos-rede {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 }
 
 /* Media Queries */
