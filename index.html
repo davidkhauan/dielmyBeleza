@@ -12,7 +12,7 @@
     </head>
     
     <body>
-        <header>
+        <header class="header-desktop">
             <nav>
                 <ul>
                     <li><a href="#inicio">Início</a></li>
@@ -25,14 +25,62 @@
                 <img src="./src/img/woman-hair.png" alt="" id="logo">
                 <h2>Dielmy Beleza</h2>
             </div>
-
+            
             <div id="switch">
                 <i class="bi bi-toggle2-off icon-black" id="btn-switch"></i>
             </div>
         </header>
+        <header class="header-queries">            
+            <div class="logo-box">
+                <img src="./src/img/woman-hair.png" alt="" id="logo">
+                <h2>Dielmy Beleza</h2>
+            </div>
+            <!-- <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                </ul>
+            </nav> -->
+            <div class="header-information">
+                <div id="switch">
+                    <i class="bi bi-toggle2-off icon-black" id="btn-switch"></i>
+                </div>
 
-        <main>
-            <div class="inicio" id="inicio">
+                <i class="bi bi-list"></i>
+            </div>
+        </header>
+
+        <<main>
+            <div class="inicio inicio-desktop" id="inicio">
+                <div class="inicio-fundo">
+                    <div class="inicio-texto">
+                        <h1>Deixe seu cabelo perfeito <br> para a sua beleza</h1>
+                        <h3>
+                            Unha e cabelo juntos com um salão bonito,
+                            para lhe entregar serviços excelentes
+                        </h3>
+                    </div>
+                    <img src="/src/img/wallpaper.png" alt="Mulher">
+                </div>
+
+                <div class="barra-social">
+                    <div class="barra1"></div>
+                    <div class="rede-sociais">
+                            <a href="https://www.instagram.com/dielmycabelo_e_corpo/" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://w.app/dielmyBeleza" target="_blank">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@dielmycabeloecorpo6243" target="_blank">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                    </div>
+                    <div class="barra2"></div>
+                </div>
+            </div>
+            <div class="inicio inicio-queries" id="inicio">
                 <div class="inicio-fundo">
                     <div class="inicio-texto">
                         <h1>Deixe seu cabelo perfeito <br> para a sua beleza</h1>
@@ -61,7 +109,7 @@
                 </div>
             </div>
 
-            <section class="sobre" id="sobre">
+            <section class="sobre sobre-desktop" id="sobre">
                 <div class="imagens">
                     <img src="/src/img/wallpapers.png" alt="">
                 </div>
@@ -80,8 +128,33 @@
                     <button id="saber-mais">Saber Mais</button>
                 </div>
             </section>
+            <section class="sobre sobre-queries" id="sobre">  
+                <div class="sobre-texto">
+                    <div class="titulo">
+                        <h4>Sobre Nós</h4>
+                    </div>
+                    <h1>
+                        Deixe seu cabelo confortável e elegante
+                        combinando com sua personalidade
+                    </h1>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Explicabo earum nisi beatae iusto illo voluptas corrupti 
+                        eveniet quo, numquam deserunt magnam omnis dicta totam
+                    </p>
+                    <div class="button-mais">
+                        <button id="saber-mais">Saber Mais</button>
+                    </div>
+                </div>
 
-            <section class="servicos" id="servicos">
+                <div class="imagens">
+                    <img src="/src/img/wallpapers.png" alt="">
+                    <img src="/src/img/wallpapers.png" alt="">
+                </div>
+                <div class="barra1"></div>
+            </section>
+
+            <section class="servicos servicos-desktop" id="servicos">
                 <div class="servicos-texto">
                     <h2>Serviços</h2>
                     <h1>Você irá ter uma experiência incrível para lhe deixar mais bonita</h1>
@@ -153,8 +226,82 @@
                     </div>
                 </div>
             </section>
+            <section class="servicos servicos-queries" id="servicos">
+                <div class="servicos-texto">
+                    <h2>Serviços</h2>
+                    <h1>Você irá ter uma experiência incrível para lhe deixar mais bonita</h1>
+                </div>
 
-            <section class="produtos">
+                <div class="servicos-conteudo">
+                    <div class="servico-compra">
+                        <div class="compra">
+                            <div id="barra"></div>
+                            <h1>Tratamentos Vislumbrantes</h1>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> 
+                                Explicabo earum nisi beatae iusto illo voluptas corrupti 
+                                <br>eveniet quo, numquam deserunt magnam omnis dicta totam
+                            </p>
+                            <button id="agendamento">Agende Já</button>
+                        </div>
+                        <div class="servicos-img">
+                            <img src="/src/img/woman.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="servicos-cards">
+                        <div class="card1 cards">
+                            <div class="card">
+                                <div class="barra"></div>
+                                <h1>Tratamento cabeludo</h1>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                    Explicabo earum nisi beatae iusto illo voluptas corrupti 
+                                    eveniet quo, numquam deserunt magnam omnis dicta totam
+                                </p>
+                                <h2 class="preco">$ 299</h2>
+                            </div>
+    
+                            <div class="card">
+                                <div class="barra"></div>
+                                <h1>Tratamento cabeludo</h1>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                    Explicabo earum nisi beatae iusto illo voluptas corrupti 
+                                    eveniet quo, numquam deserunt magnam omnis dicta totam
+                                </p>
+                                <h2 class="preco">$ 299</h2>
+                            </div>
+                        </div>
+
+                        <div class="card2 cards">
+                            <div class="card">
+                                <div class="barra"></div>
+                                <h1>Tratamento cabeludo</h1>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                    Explicabo earum nisi beatae iusto illo voluptas corrupti 
+                                    eveniet quo, numquam deserunt magnam omnis dicta totam
+                                </p>
+                                <h2 class="preco">$ 299</h2>
+                            </div>
+    
+                            <div class="card">
+                                <div class="barra"></div>
+                                <h1>Tratamento cabeludo</h1>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                    Explicabo earum nisi beatae iusto illo voluptas corrupti 
+                                    eveniet quo, numquam deserunt magnam omnis dicta totam
+                                </p>
+                                <h2 class="preco">$ 299</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="produtos produtos-desktop">
                 <div class="produtos-texto">
                     <h4>Melhores Produtos</h4>
                     <h1>Para os seus melhores tratamentos</h1>
@@ -198,8 +345,53 @@
                     </div>
                 </div>
             </section>
+            <section class="produtos produtos-queries">
+                <div class="produtos-texto">
+                    <h4>Melhores Produtos</h4>
+                    <h1>Para os seus melhores tratamentos</h1>
+                </div>
 
-            <section class="feedback">
+                <div class="produtos-card">
+                    <div class="card">
+                        <img src="/src/img/produto.jpg" alt="">
+                        <h1>Pomada Redutora</h1>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Explicabo earum nisi beatae iusto illo voluptas corrupti 
+                            eveniet quo, numquam deserunt magnam omnis dicta totam
+                        </p>
+                        <h2 class="preco">$ 199</h2>
+                        <button class="comprar">Comprar</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="/src/img/produto.jpg" alt="Pomada Redutora">
+                        <h1>Pomada Redutora</h1>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Explicabo earum nisi beatae iusto illo voluptas corrupti 
+                            eveniet quo, numquam deserunt magnam omnis dicta totam
+                        </p>
+                        <h2 class="preco">$ 199</h2>
+                        <button class="comprar">Comprar</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="/src/img/produto.jpg" alt="Pomada Redutora">
+                        <h1>Pomada Redutora</h1>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Explicabo earum nisi beatae iusto illo voluptas corrupti 
+                            eveniet quo, numquam deserunt magnam omnis dicta totam
+                        </p>
+                        <h2 class="preco">$ 199</h2>
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="barra1"></div>
+            </section>
+
+            <section class="feedback feedback-desktop">
                 <div class="feedback-conteudo">
                     <h4>Feedback</h4>
                     <h1>Porque as pessoas nos escolhem?</h1>
@@ -214,10 +406,10 @@
 
                             <div class="autor-icons">
                                 <button onClick="showPrevFeedback()">
-                                    <i>ESQUERDA</i>
+                                    <i class="bi bi-arrow-left-circle"></i>
                                 </button>
                                 <button onClick="showNextFeedback()">
-                                    <i>DIREITA</i>
+                                    <i class="bi bi-arrow-right-circle"></i>
                                 </button>
                             </div>
                         </div>
@@ -228,8 +420,36 @@
                     </div>
                 </div>
             </section>
+            <section class="feedback feedback-queries">
+                <div class="feedback-conteudo">
+                    <h4>Feedback</h4>
+                    <h1>Porque as pessoas nos escolhem?</h1>
+                    
+                    <div class="conteudo">
+                        <div class="autor">
+                            <p class="feedback-texto"></p>
+                            <div class="autor-dados">
+                                <h2 class="autor-nome"></h2>
+                                <p class="autor-local">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                    Explicabo earum nisi beatae iusto 
+                                </p>
+                            </div>
 
-            <section class="instagram">
+                            <div class="autor-icons">
+                                <button onClick="showPrevFeedback()">
+                                    <i class="bi bi-arrow-left-circle"></i>
+                                </button>
+                                <button onClick="showNextFeedback()">
+                                    <i class="bi bi-arrow-right-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="instagram instagram-desktop">
                 <h1>Instagram: <a href="https://www.instagram.com/dielmycabelo_e_corpo/" target="_blank">@dielmycabelo_e_corpo</a></h1>
                 <div class="instagram-carrossel">
                     <img src="/src/img/woman.jpg" alt="">
@@ -240,14 +460,41 @@
                     <img src="/src/img/produto.jpg" alt="">
                 </div>
             </section>
+            <section class="instagram instagram-queries">
+                <h1>Instagram: <a href="https://www.instagram.com/dielmycabelo_e_corpo/" target="_blank">@dielmycabelo_e_corpo</a></h1>
+                <div class="instagram-carrossel">
+                    <img src="/src/img/woman.jpg" alt="">
+                    <img src="/src/img/produto.jpg" alt="">
+                    <img src="/src/img/woman.jpg" alt="">
+                    <img src="/src/img/produto.jpg" alt="">
+                </div>
+                <div class="barra1"></div>
+            </section>
         </main>
 
-        <footer id="contato">
+        <footer class="footer-desktop" id="contato">
             <div class="diely-salao">
-                <h1><i>ICONE</i> DielmyCabelo&Corpo</h1>
-                <p>Querendo sempre deixar você mais linda do que é</p>
-                <h3><i>ICONE</i> 4002-8922</h3>
-                <h3><i>ICONE</i> LoremIpisu@gmail.com</h3>
+                <div class="diely-marca">
+                    <div class="diely-container">
+                        <img src="./src/img/woman-hair.png" alt="" id="logo">
+                        <h1>DielmyCabelo&Corpo</h1>
+                    </div>
+                </div>
+                <p>
+                    Querendo sempre deixar você mais linda do que é
+                </p>
+                <div class="diely-contato">
+                    <div class="diely-container">
+                        <i class="bi bi-telephone"></i>
+                        <h3>4002-8922</h3>
+                    </div>
+                </div>
+                <div class="diely-email">
+                    <div class="diely-container">
+                        <i class="bi bi-envelope"></i>
+                        <h3>LoremIpisu@gmail.com</h3>
+                    </div>
+                </div>
             </div>
 
             <div class="quick-links">
@@ -255,6 +502,51 @@
                 <a href="#inicio">Inicio</a>
                 <a href="#sobre">Sobre Nós</a>
                 <a href="#servicos">Serviços</a>
+            </div>
+
+            <div class="contatos">
+                <h1>Contato</h1>
+                <div class="contatos-rede">
+                    <a href="https://www.instagram.com/dielmycabelo_e_corpo/" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://w.app/dielmyBeleza" target="_blank">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@dielmycabeloecorpo6243" target="_blank">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <footer class="footer-queries" id="contato">
+            <div class="footer-container">
+                <div class="diely-salao">
+                    <div class="diely-marca">
+                        <img src="./src/img/woman-hair.png" alt="" id="logo">
+                        <h1>DielmyCabelo&Corpo</h1>
+                    </div>
+                    <p>
+                        Querendo sempre deixar você mais linda do que é
+                    </p>
+                    <div class="diely-contato">
+                        <i class="bi bi-telephone"></i>
+                        <h3>4002-8922</h3>
+                    </div>
+                    <div class="diely-email">
+                        <i class="bi bi-envelope"></i>
+                        <h3>LoremIpisu@gmail.com</h3>
+                    </div>
+                </div>
+    
+                <div class="quick-links">
+                    <h1>Quick Links</h1>
+                    <div class="links">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#sobre">Sobre Nós</a>
+                        <a href="#servicos">Serviços</a>
+                    </div>
+                </div>
             </div>
 
             <div class="contatos">
