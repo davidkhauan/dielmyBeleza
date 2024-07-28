@@ -51,31 +51,29 @@ header {
     top: 0;
     margin-bottom: 50px;
 }
-
 nav ul {
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     gap: 20px;
 }
-
 li a {
     font-size: 20px;
     font-family: var(--font-EduAustralia);
     font-weight: 800;
     color: black;
     transition: 0.3s all ease;
+    border-radius: 80%;
 }
 li a:hover {
-    background-color: #71232c;
-    padding: 5px;
-    border-radius: 25%;
-    color: whitesmoke;
-    text-decoration: underline;
+    /* color: white;
+    background-color: black; */
+    /* padding: 3px; */
+    border-radius: 100%;
+    text-decoration: underline white;
     transform: scale(1.1);
     transition: 0.5s all ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .logo-box {
     display: flex;
@@ -91,7 +89,7 @@ li a:hover {
     font-family: var(--font-EduAustralia);
     font-optical-sizing: auto;
     font-weight: 600;
-    font-style: italic;
+    /* font-style: italic; */
 }
 #btn-switch {
     font-size: 38px;
@@ -107,10 +105,10 @@ li a:hover {
     color: black;
     transition: color 0.3s ease, transform 0.3s ease;
 }
-.icon-switch {
+/* .icon-switch {
     transform: scale(1.2);
-    transition: color 0.3s ease, transform 0.3s ease;
-}
+    transition: color 10s ease, transform 0.3s ease;
+} */
 
 /* Inicio */
 .inicio .inicio-fundo {
@@ -135,7 +133,6 @@ li a:hover {
 .inicio-texto h3 {
     color: #5b1b0c;
 }
-
 .barra-social {
     display: flex;
     flex-direction: row;
@@ -1042,13 +1039,13 @@ footer h1, footer h3, footer a, footer p {
         gap: 10px;
     }
     .contatos-rede a {
-        font-size: 14px; /* Diminuir o tamanho dos ícones */
+        font-size: 14px;
     }
     #logo {
-        width: 30px; /* Diminuir o tamanho da imagem do logo */
+        width: 30px;
         height: 30px;
     }
     .diely-marca h1, .diely-contato h3, .diely-email h3 {
-        font-size: 14px; /* Diminuir o tamanho do texto */
+        font-size: 14px;
     }
 }
