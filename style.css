@@ -445,6 +445,11 @@ main .feedback {
     border: none;
     cursor: pointer;
     padding: 10px;
+    transition: 0.3s all ease;
+}
+.autor-icons button:hover {
+    color: aliceblue;
+    transform: scale(1.05);
 }
 .feedback-texto {
     font-size: 34px;
@@ -510,6 +515,17 @@ footer h1, footer h3, footer a, footer p {
     align-items: flex-start;
     gap: 10px;
 }
+.diely-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+.diely-marca img {
+    width: 40px;
+    height: 40px;
+}
 .diely-salao h1 i, .diely-salao h3 i {
     margin-right: 8px;
 }
@@ -538,17 +554,501 @@ footer h1, footer h3, footer a, footer p {
     gap: 15px;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    .produtos-card {
-        flex-direction: column;
+/* Media Queries Desktop */
+@media screen and (min-width: 1024px) {
+    body .header-queries {
+        display: none;
     }
-    
-    .feedback-conteudo .conteudo {
-        flex-direction: column;
+    main .inicio-queries {
+        display: none;
+    }
+    main .sobre-queries {
+        display: none;
+    }
+    main .servicos-queries {
+        display: none;
+    }
+    main .produtos-queries {
+        display: none;
+    }
+    main .feedback-queries {
+        display: none;
+    }
+    main .instagram-queries {
+        display: none;
+    }
+    body .footer-queries {
+        display: none;
+    }
+}
+/* Media Queries Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body .header-desktop {
+        display: none;
+    }
+    /* Header */
+    .header-queries {
+        justify-content: space-between;
+        padding: 30px;
+    }
+    .header-queries .header-information {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+    .header-information i {
+        font-size: 38px;
+        cursor: pointer;
+        transition: 0.3s all ease;
+    }
+    .header-information i:hover {
+        color: white;
     }
 
-    .feedback-imagem, .texto-feedback {
+    main .inicio-desktop {
+        display: none;
+    }
+    /* Inicio */
+    .inicio-queries .inicio-fundo {
+        gap: 20px;
+        transition: 0.3s all ease;
+    }
+    .inicio-fundo {
+        flex-direction: column;
+    }
+    .inicio-texto {
+        text-align: center;
+    }
+    .inicio-fundo img {
+        width: 450px;
+        height: 600px;
+    }
+    .barra-social .barra1 {
+        width: 900px;
+        height: 3px;
+    }
+    .barra-social .barra2 {
+        width: 150px;
+        height: 3px;
+    }
+    .barra-social .rede-sociais {
+        display: flex;
+        gap: 20px;
+    }
+    .rede-sociais a {
+        border: 3px solid #9A3451;
+        border-radius: 50%;
+        padding: 16px;
+    }
+    .rede-sociais a:hover {
+        transform: scale(1.1);
+        color: whitesmoke;
+        background-color: black;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    .rede-sociais a i {
+        font-size: 32px;
+    }
+
+    main .sobre-desktop {
+        display: none;
+    }
+    /* Sobre */
+    main .sobre-queries {
+        gap: 30px;
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 30px;
+    }
+    .imagens img {
+        width: 350px;
+        height: 500px;
+        border-radius: 10px;
+        border: 3px solid var(--pink-vinho);
+        box-shadow: rgba(218, 32, 94, 0.448) 0px 10px 36px 0px, rgba(199, 67, 67, 0.505) 0px 0px 0px 1px;
+    }
+    .sobre-queries .sobre-texto {
+        gap: 15px;
+    }
+    .button-mais {
+        position: relative;
+        right: -230px;
+    }
+    .imagens {
+        display: flex;
+        gap: 10px;
+    }
+    .barra1 {
+        margin-top: 10px;
+        width: 520px;
+        height: 3px;
+        background-color: black;
+    }
+
+    main .servicos-desktop {
+        display: none;
+    }
+    /* Serviços */
+    .servicos-queries {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .servicos-queries .servicos-texto {
+        text-align: center;
+        gap: 20px;
+    }
+    .servicos-conteudo {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .servicos-conteudo .servico-compra {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        word-wrap: inherit;
+        word-break: inherit;
+    }
+    .compra h1 {
+        margin-bottom: 15px;
+    }
+    .servicos-img img {
+        width: 200px;
+        height: 300px;
+    }
+    .servicos-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    main .produtos-desktop {
+        display: none;
+    }
+    /* Produtos */
+    main .produtos-queries {
+        margin-top: 100px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 0 40px;
+    }
+    .produtos-queries .barra1 {
+            margin-top: 10px;
+            width: 400px;
+            height: 3px;
+            background-color: black;
+    }
+    .produtos-texto h4 {
+        margin-bottom: 10px;
+    }
+    .produtos .produtos-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    main .feedback-desktop {
+        display: none;
+    }
+    /* Feedback */
+    .feedback-conteudo .conteudo {
+        flex-direction: column;
+        gap: 0px;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    .autor {
+        font-size: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .autor-icons button i {
+        font-size: 48px;
+    }
+
+    main .instagram-desktop {
+        display: none;
+    }
+    /* Instagram */
+    .instagram-queries .barra1 {
+        width: 300px;
+    }
+
+    body .footer-desktop {
+        display: none;
+    }
+    /* Footer */
+    .footer-queries {
+        justify-content: center;
+        flex-direction: column;
+        height: 600px;
+        gap: 80px;
+        padding: 10px;
+    }
+    .footer-container {
+        display: flex;
+        gap: 70px;  
+    }
+    footer h1, footer h3, footer a, footer p {
+        margin: 5px 0;
+    }
+    .diely-marca, .diely-contato, .diely-email {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+    .diely-marca i, .diely-contato i, .diely-email i {
+        font-size: 24px;
+    } 
+    .diely-marca img {
+        width: 30px;
+    }
+    .contatos h1 {
+        text-align: center;
+    }
+    .contatos .contatos-rede {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+}
+/* Media Queries Smartphone */
+@media screen and (max-width: 767px) {
+    body .header-desktop {
+        display: none;
+    }
+    /* Header */
+    header {
+        flex-direction: row;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    nav ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+    .logo-box h2 {
+        font-size: 24px;
+    }
+    #btn-switch {
+        font-size: 32px;
+    }
+
+    main .inicio-desktop {
+        display: none;
+    }
+    /* Inicio */
+    .inicio .inicio-fundo {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .inicio-fundo img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+    .inicio-texto h1 {
+        font-size: 36px;
+    }
+    .barra-social .barra1 {
+        width: 100%;
+    }
+    .barra-social .rede-sociais {
+        gap: 5px;
+    }
+    .rede-sociais a {
+        padding: 10px;
+    }
+    .rede-sociais a i {
+        font-size: 20px;
+    }
+
+    main .sobre-desktop {
+        display: none;
+    }
+    /* Sobre */
+    main .sobre {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    .imagens img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+    .sobre .sobre-texto {
+        font-size: 20px;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+    .sobre-texto button {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    main .servicos-desktop {
+        display: none;
+    }
+    /* Serviços */
+    main .servicos {
+        padding: 0 10px;
+        gap: 20px;
+    }
+    .servicos-conteudo {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .servico-compra {
         max-width: 100%;
+    }
+    .servicos-img img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+    .servicos-cards {
+        gap: 20px;
+    }
+
+    main .produtos-desktop {
+        display: none;
+    }
+    /* Produtos */
+    main .produtos {
+        padding: 0 10px;
+        gap: 20px;
+    }
+    .produtos .produtos-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .card {
+        max-width: 100%;
+    }
+    .card h1 {
+        font-size: 20px;
+    }
+    .card p {
+        font-size: 16px;
+    }
+    .card .preco {
+        font-size: 20px;
+    }
+    .card .comprar {
+        width: 150px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    main .feedback-desktop {
+        display: none;
+    }
+    /* Feedback */
+    main .feedback {
+        padding: 0 10px;
+        gap: 20px;
+    }
+    .feedback-conteudo {
+        gap: 20px;
+    }
+    .feedback-texto {
+        font-size: 20px;
+    }
+    .feedback-imagem img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    main .instagram-desktop {
+        display: none;
+    }
+    /* Instagram */
+    main .instagram {
+        padding: 0 10px;
+        gap: 20px;
+    }
+    .instagram-carrossel img {
+        width: 100%;
+        height: auto;
+        max-width: 150px;
+    }
+
+    body .footer-desktop {
+        display: none;
+    }
+    /* Footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .footer-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+    .diely-salao, .quick-links, .contatos-rede {
+        align-items: center;
+    }
+    .diely-salao .diely-marca {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .diely-marca h1 {
+        text-align: center;
+    }
+    .diely-contato, .diely-email {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .quick-links .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .contatos-rede {
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .contatos-rede a {
+        font-size: 14px; /* Diminuir o tamanho dos ícones */
+    }
+    #logo {
+        width: 30px; /* Diminuir o tamanho da imagem do logo */
+        height: 30px;
+    }
+    .diely-marca h1, .diely-contato h3, .diely-email h3 {
+        font-size: 14px; /* Diminuir o tamanho do texto */
     }
 }
